@@ -1,29 +1,29 @@
-document.write("Hello, world!");
+document.write("Hello,world!");
 
-function sayHello(){
- var response = prompt("what's your name?");
- alert("hello " + response + " , have a good day!");
-}
+  function sayHello(){
+    var response = prompt("what's your name?");
+    alert("Hello" + response + ", have a good day!");
+  }
 
 function add(a,b){
-   return a+b;
+  return a+b;
 }
-console.log((20,30));
-console.log((100,30));
+console.log(add(20,30));
+console.log(add(100,300));
 
 function showTopic(){
-var x = document.getElementById("demo");
-x.style.fontSize = "25px";
-x.style.color = "red";
+  var x = document.getElementById("demo");
+  x.style.fontSize = "25px";
+  x.style.color = "red"
 }
 
 var movies = ["Avengers","Captain Marvel","Black panther","Spiderman"];
-console.log(movies[0])="Wonder woman";
+movies[0]="Wonder woman";
 movies.push("Avengers");
 movies.pop();
 console.log(movies);
 
-var movie = {
+var movie ={
   title:"Avengers",
   time:"12pm"
 };
@@ -31,29 +31,31 @@ movie.status = "available";
 console.log(movie);
 
 
-var movie2 = ["Avengers", "Captain Marvel", "Black Panther", "Spiderman"]; for (var movie of movie2) {
-console.log(movie);
+var movie = {
+  title:"Avengers",
+  time:"12pm"
 };
 
 var movieDetails = [
-  {title: "Avengers",
-time:"12pm",
-status: "available"},
+{title: "Avengers",
+  time:"12pm",
+  status: "available"},
 {title: "Captain Marvel",
-time:"2pm",
-status: "unavailable"},
+  time:"2pm",
+  status: "unavailable"},
 {title: "Black Panther",
-time:"4pm",
-status: "available"},
+  time:"4pm",
+  status: "available"},
 {title: "Spiderman",
-time:"6pm",
-status: "available"}
+  time:"6pm",
+  status: "available"}
 ];
 
 for (var movie of movieDetails){
-if (movie.status === "available"){
-console.log("The movie " + movie.title + " plays at " + movie.time) }
+  if (movie.status === "available"){
+    console.log("The movie " + movie.title + " plays at " + movie.time)
+  }
 else{
-console.log("Sorry, the movie " + movie.title + " is sold out.")
-}
+    console.log("Sorry, the movie " + movie.title + " is sold out.")
+  }
 };
